@@ -1,0 +1,23 @@
+.history{
+    font-family: "Bebas Neue", sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.f1{
+    width: 900px;
+    height: 500px;
+}
+
+.teams{
+    margin-left: 290px;
+    width: 900px;
+}
+
+.images{
+    width: 600px;
+    height: 300px;
+}

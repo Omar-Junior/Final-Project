@@ -1,0 +1,13 @@
+body{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer {
+    font-family: "Bebas Neue", sans-serif;
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    margin-top: 40px;
+    border-top: 1px solid #e7e7e7;
+}

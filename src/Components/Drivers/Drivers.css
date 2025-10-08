@@ -1,0 +1,109 @@
+.drivers .image-hover-card {
+    /* give each card a fixed width so the flex container can place multiple cards per row */
+    width: 310px;
+    margin: 5px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    cursor: pointer;
+    position: relative;
+}
+
+.drivers .image-hover-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.drivers .card-img-container {
+    position: relative;
+    width: 310px;
+    height: 400px;
+    background: linear-gradient(45deg, #e3e3e3, #f0f0f0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.drivers .placeholder-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+    transition: all 0.4s ease;
+}
+
+.drivers .hover-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    position: absolute;
+    transition: all 0.4s ease;
+    backdrop-filter: blur(2px);
+}
+
+.drivers .image-hover-card:hover .hover-overlay {
+    opacity: 1;
+}
+
+.drivers .hover-text {
+    color: white;
+    text-align: left;
+    padding: 2rem;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+}
+
+.drivers .image-hover-card:hover .hover-text {
+    transform: translateY(0);
+}
+
+.drivers .hover-text h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.drivers .hover-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.drivers .card-body {
+    padding: 1.5rem;
+    background: white;
+}
+
+.drivers .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.drivers .card-subtitle {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.drivers .cards-container {
+    width: 100%;
+    max-width: 1600px;
+    padding: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.drivers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,203 @@
+.carousel-item {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    padding: 20px;
+}
+
+.hover-text {
+    max-width: 80%;
+}
+
+.hover-text h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.hover-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.carousel-item:hover .hover-overlay {
+    opacity: 1;
+}
+
+.carousel-item:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.7);
+}
+
+.carousel {
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 900px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    opacity: 0.8;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.carousel-indicators button.active {
+    background-color: white;
+    transform: scale(1.2);
+}
+
+body {
+    min-height: 100vh;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1000px;
+}
+
+h1 {
+    margin-left: 30px;
+    text-align: left;
+    color: white;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 350px;
+    }
+    
+    .hover-text h3 {
+        font-size: 1.5rem;
+    }
+    
+    .hover-text p {
+        font-size: 1rem;
+    }
+}
+
+.spots {
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    display: flex;
+}
+
+.card{
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.184);
+    overflow: hidden;
+    margin: 10px;
+    transition: transform 0.3s ease;
+    width: 300px;
+    height: 500px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.news{
+    text-align: left;
+    padding: 10px;
+    background-color: #ffffff;
+    overflow-y: auto;
+    height: auto;
+}
+
+.first2{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.second2{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.card-body{
+    height: 100%;
+    margin-left: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.latest-moments {
+    background-color: rgb(22, 22, 22);
+    text-align: center;
+    height: 460px;
+}
+
+.latest-moments h1 {
+    color: white;
+    padding: 5px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    overflow: hidden;
+}
+
+.vids {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.player {
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}

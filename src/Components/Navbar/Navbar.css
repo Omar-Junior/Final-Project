@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    font-family: "Bebas Neue", sans-serif;
+    line-height: 1.6;
+    background: #c7c7c7;
+}
+
+.navbar {
+    position: fixed;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgb(0, 0, 0);
+    padding: 15px 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-radius: 5px;
+    width: 90%;
+    backdrop-filter: blur(10px);
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar a:hover {
+    color: #e90101;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: left 0.5s;
+}
